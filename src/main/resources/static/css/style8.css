@@ -1,0 +1,100 @@
+
+/* =========================
+   PRESCRIPTION PAGE DESIGN
+========================= */
+
+body:has(.card) {
+    background: #f5f9fc;
+}
+
+/* Prescription Container */
+
+.container {
+    padding: 60px 7%;
+}
+
+/* Prescription Card */
+
+.container > .card {
+    max-width: 750px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    border: 1px solid #e2edf2;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Top Color Line */
+
+.container > .card::before {
+    content: "";
+    display: block;
+    height: 6px;
+    width: 100%;
+    background: #087f8c;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Prescription Heading */
+
+.container > .card h3 {
+    font-size: 30px;
+    color: #123b50;
+    margin-bottom: 28px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e2edf2;
+}
+
+/* Prescription Details */
+
+.container > .card p {
+    font-size: 16px;
+    color: #64748b;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f4f7;
+    line-height: 1.6;
+}
+
+/* Bold Labels */
+
+.container > .card p b {
+    color: #123b50;
+}
+
+/* Medicine Highlight */
+
+.container > .card p:nth-child(3) {
+    background: #e0f7fa;
+    padding: 16px;
+    border-radius: 8px;
+    color: #087f8c;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.container > .card p:last-child {
+    border-bottom: none;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 40px 20px;
+    }
+
+    .container > .card {
+        padding: 30px 22px;
+    }
+
+    .container > .card h3 {
+        font-size: 25px;
+    }
+
+}

@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="css/style5.css">
+</head>
+<body>
+
+<nav>
+    <h2>🏥 Book Appointment</h2>
+    <a href="/patient-dashboard">Dashboard</a>
+</nav>
+
+<div class="form-container">
+    <h2>Book Appointment</h2>
+
+    <form onsubmit="bookAppointment(event)">
+        <label>Patient Name</label>
+        <input type="text" placeholder="Enter patient name">
+
+        <label>Select Department</label>
+        <select>
+            <option>Cardiology</option>
+            <option>Dermatology</option>
+            <option>General Medicine</option>
+        </select>
+
+        <label>Select Doctor</label>
+        <select>
+            <option>Dr. Rahul Sharma</option>
+            <option>Dr. Priya Singh</option>
+            <option>Dr. Amit Verma</option>
+        </select>
+
+        <label>Date</label>
+        <input type="date">
+
+        <label>Time</label>
+        <input type="time">
+
+        <button type="submit">Book Appointment</button>
+    </form>
+</div>
+
+<script>
+function bookAppointment(event) {
+    event.preventDefault();
+
+    let patientName = document.querySelector('input[type="text"]').value;
+    let date = document.querySelector('input[type="date"]').value;
+    let time = document.querySelector('input[type="time"]').value;
+
+    if (patientName === "" || date === "" || time === "") {
+        alert("Please fill all details");
+        return;
+    }
+
+    alert("Appointment booked successfully!");
+
+    window.location.href = "patient-dashboard.html";
+}
+</script>
+</body>
+</html>
+

@@ -1,0 +1,86 @@
+
+/* =========================
+   DEPARTMENTS PAGE DESIGN
+========================= */
+
+body:has(.cards) {
+    background: #f5f9fc;
+}
+
+/* Departments Container */
+
+.container {
+    padding: 65px 7%;
+}
+
+/* Departments Cards */
+
+.container .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Department Card */
+
+.container .card {
+    background: white;
+    padding: 40px 25px;
+    border-radius: 18px;
+    text-align: center;
+    border: 1px solid #e2edf2;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Top Color Line */
+
+.container .card::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 5px;
+    background: #087f8c;
+    border-radius: 10px;
+    margin: 0 auto 25px;
+}
+
+/* Department Heading */
+
+.container .card h3 {
+    font-size: 23px;
+    color: #123b50;
+    margin-bottom: 18px;
+}
+
+/* Description */
+
+.container .card p {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Hover Effect */
+
+.container .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(8, 127, 140, 0.15);
+    border-color: #087f8c;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .container .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 45px 25px;
+    }
+
+}

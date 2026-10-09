@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/style12.css">
+</head>
+<body>
+
+<nav>
+    <h2>👤 My Profile</h2>
+    <a href="/patient-dashboard">Dashboard</a>
+</nav>
+
+<div class="form-container">
+    <h2>Profile</h2>
+
+    <form onsubmit="updateProfile(event)">
+        <label>Name</label>
+        <input type="text" value="Mayank">
+
+        <label>Email</label>
+        <input type="email" value="mayank@example.com">
+
+        <label>Phone</label>
+        <input type="tel" value="9876543210">
+
+        <label>Gender</label>
+        <select>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <button type="submit">Update Profile</button>
+    </form>
+</div>
+
+
+<script>
+function updateProfile(event) {
+    event.preventDefault();
+
+    alert("Profile updated successfully!");
+}
+</script>
+</body>
+</html>
+

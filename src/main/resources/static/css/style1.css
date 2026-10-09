@@ -1,0 +1,108 @@
+
+/* =========================
+   LOGIN PAGE DESIGN
+========================= */
+
+.form-container {
+    width: 420px;
+    max-width: 90%;
+    margin: 70px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.10);
+    border: 1px solid #e2edf2;
+}
+
+.form-container h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #123b50;
+    margin-bottom: 30px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    background: #f8fafc;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+    border-color: #087f8c;
+    box-shadow: 0 0 0 3px rgba(8, 127, 140, 0.12);
+}
+
+.form-container button {
+    padding: 14px;
+    background: #087f8c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-container button:hover {
+    background: #065f6b;
+    transform: translateY(-2px);
+}
+
+.form-container > p {
+    text-align: center;
+    margin-top: 25px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.form-container > p a {
+    color: #087f8c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.form-container > p a:hover {
+    text-decoration: underline;
+}
+
+/* Login page background */
+
+body:has(.form-container) {
+    background: linear-gradient(
+        135deg,
+        #e0f7fa,
+        #f8fcff
+    );
+    min-height: 100vh;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .form-container {
+        margin: 40px auto;
+        padding: 28px 22px;
+    }
+
+}

@@ -1,0 +1,90 @@
+
+/* =========================
+   DOCTOR DASHBOARD DESIGN
+========================= */
+
+body:has(.cards) {
+    background: #f5f9fc;
+}
+
+/* Dashboard Heading */
+
+.container h1 {
+    text-align: center;
+    font-size: 38px;
+    color: #123b50;
+    margin-bottom: 45px;
+}
+
+/* Dashboard Cards */
+
+.cards .card {
+    text-align: center;
+    padding: 35px 25px;
+    background: white;
+    border-radius: 18px;
+    border: 1px solid #e2edf2;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.cards .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(8, 127, 140, 0.15);
+    border-color: #087f8c;
+}
+
+/* Card Heading */
+
+.cards .card h3 {
+    font-size: 22px;
+    color: #123b50;
+    margin-bottom: 18px;
+}
+
+/* Card Description */
+
+.cards .card p {
+    font-size: 15px;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* View Button */
+
+.cards .card .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #087f8c;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cards .card .btn:hover {
+    background: #065f6b;
+}
+
+/* Dashboard Grid */
+
+.container .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .container h1 {
+        font-size: 30px;
+    }
+
+    .container .cards {
+        grid-template-columns: 1fr;
+    }
+
+}

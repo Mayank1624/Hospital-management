@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+<nav>
+    <h2>🏥 HealthCare</h2>
+    <a href="/index">Home</a>
+</nav>
+
+<div class="form-container">
+    <h2>Login</h2>
+
+    <form onsubmit="loginUser(event)">
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" required>
+
+        <label>Login As</label>
+        <select>
+            <option>Patient</option>
+            <option>Doctor</option>
+            <option>Admin</option>
+        </select>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <p>Don't have an account? <a href="register.html">Register</a></p>
+</div>
+
+
+<script>
+function loginUser(event) {
+    event.preventDefault();
+
+    let role = document.querySelector("select").value;
+
+    if (role === "Patient") {
+        window.location.href = "patient-dashboard.html";
+    } 
+    else if (role === "Doctor") {
+        window.location.href = "doctor-dashboard.html";
+    } 
+    else {
+        window.location.href = "admin-dashboard.html";
+    }
+}
+</script>
+</body>
+</html>
+

@@ -1,0 +1,99 @@
+
+/* =========================
+   BILLING PAGE DESIGN
+========================= */
+
+body:has(table) {
+    background: #f5f9fc;
+}
+
+/* Billing Container */
+
+.container {
+    padding: 60px 7%;
+    overflow-x: auto;
+}
+
+/* Billing Table */
+
+.container table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2edf2;
+}
+
+/* Table Header */
+
+.container table th {
+    background: #123b50;
+    color: white;
+    padding: 20px 22px;
+    text-align: left;
+    font-size: 15px;
+}
+
+/* Table Data */
+
+.container table td {
+    padding: 20px 22px;
+    border-bottom: 1px solid #e2edf2;
+    color: #475569;
+    font-size: 15px;
+}
+
+/* Alternate Row */
+
+.container table tr:nth-child(even) {
+    background: #f8fcfd;
+}
+
+/* Row Hover */
+
+.container table tr:hover {
+    background: #e0f7fa;
+}
+
+/* Bill ID */
+
+.container table td:first-child {
+    font-weight: bold;
+    color: #087f8c;
+}
+
+/* Status */
+
+.container table td:last-child {
+    font-weight: bold;
+    color: #087f8c;
+}
+
+/* Pending Status */
+
+.container table tr:last-child td:last-child {
+    color: #d97706;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 40px 20px;
+    }
+
+    .container table {
+        min-width: 650px;
+    }
+
+    .container table th,
+    .container table td {
+        padding: 15px;
+    }
+
+}

@@ -1,0 +1,108 @@
+/* Patient Registration Page */
+
+body:has(.form-container) {
+    background: linear-gradient(135deg, #e3f2fd, #f1f8ff);
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+    background: #0d6efd;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Registration Box */
+.form-container {
+    width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #0d6efd;
+    margin-bottom: 25px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin: 8px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-container input,
+.form-container select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+}
+
+.form-container button {
+    margin-top: 20px;
+    padding: 12px;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background: #084298;
+}
+
+.form-container p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-container p a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Mobile Responsive */
+@media (max-width: 500px) {
+    .form-container {
+        width: 85%;
+        padding: 20px;
+    }
+
+    nav {
+        padding: 15px 20px;
+    }
+}

@@ -1,0 +1,106 @@
+
+/* =========================
+   ADMIN DASHBOARD DESIGN
+========================= */
+
+body:has(.cards) {
+    background: #f5f9fc;
+}
+
+/* Admin Container */
+
+.container {
+    padding: 60px 7%;
+}
+
+/* Welcome Heading */
+
+.container h1 {
+    text-align: center;
+    font-size: 38px;
+    color: #123b50;
+    margin-bottom: 45px;
+}
+
+/* Dashboard Grid */
+
+.container .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Admin Cards */
+
+.container .card {
+    background: white;
+    padding: 35px 30px;
+    border-radius: 18px;
+    border: 1px solid #e2edf2;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Hover */
+
+.container .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(8, 127, 140, 0.15);
+    border-color: #087f8c;
+}
+
+/* Card Heading */
+
+.container .card h3 {
+    font-size: 23px;
+    color: #123b50;
+    margin-bottom: 18px;
+}
+
+/* Description */
+
+.container .card p {
+    font-size: 15px;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Manage Buttons */
+
+.container .card .btn {
+    display: inline-block;
+    background: #087f8c;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.container .card .btn:hover {
+    background: #065f6b;
+    transform: translateY(-2px);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 40px 20px;
+    }
+
+    .container h1 {
+        font-size: 30px;
+    }
+
+    .container .cards {
+        grid-template-columns: 1fr;
+    }
+
+}
